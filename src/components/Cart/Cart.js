@@ -7,6 +7,8 @@ function Cart() {
 
   const cartItems = Object.values(cart)
     .map(item => {
+      // check what data type item is here
+      console.log(item);
       return {
         ...item,
         ...produce[item.id]
